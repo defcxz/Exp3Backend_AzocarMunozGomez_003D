@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilos.css">
+   <link rel="stylesheet" href="css/contacto.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>  
+   <script src="js/jquery.validate.js"></script>
+   <script src="js/formcontacto.js"></script>
+   <title>Contacto</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+         <img src="img/LogitoMenu.jpg" width="30" height="30" alt="">
+       </a>     
+      <div class="collapse navbar-collapse" id="opciones">   
+         <ul class="navbar-nav derecha">
+          <li class="nav-item">
+              <a class="nav-link" href="Registro.html">Registro</a>
+           </li>
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="galeria.html">Galería de fotos</a>
+            </li>            
+            <li class="nav-item contactanos">
+              <a class="nav-link" href="contacto.html">Contáctanos</a>
+           </li>     
+         </ul>
+      </div>
+   </nav>
+  
+   <div class="container col-sm-12">
+      <h1 class="titulo">
+         ¡Contáctanos!
+      </h1>
+      <div class="formulario col-md-10 col-sm-12">
+         <aside class="side col-md-4 col-sm-12">
+            <img class="logoside" src="img/LogitoMenu.jpg">
+            <p class="sloganside">Tu opinión es más importante de lo que crees.</p>
+      </aside>
+            <form id="formcontacto" class="form col-md-6 col-sm-12">
+               <div class="form-group">
+                  <label>Nombre y Apellido: </label>
+                  <input type="text" name="nombre" id="nombre" required class="form-control" placeholder="Ingresa tu nombre y apellido" onchange="CambiarMayusculas()">
+               </div>
+               <div class="form-group">
+                  <label>Correo Electrónico: </label>
+                  <input type="text" name="email" required placeholder="nombre@dominio.cl" class="form-control">
+               </div>
+               <div class="form-group">
+                  <label>Teléfono: </label>
+                  <input type="text" name="fono" minlength="12" class="form-control" placeholder="+56 9 xxxx xxxx">
+               </div>
+               <div class="form-group">
+                  <label>Asunto: </label>
+                  <input type="text" name="asunto" minlength="5" required class="form-control" placeholder="Ingresa el asunto de tu mensaje">
+               </div>
+               <div class="form-group">
+                  <label>Mensaje:</label>
+                  <textarea type="text" name="mensaje" minlength="10" class="form-control" required placeholder="Ingresa aquí tu mensaje" rows="5"></textarea>
+               </div>
+               <br>
+               <button class="btn btn-primary">Enviar</button>
+               </form>
+      </div>
+      
+   </div>
+   <footer class="text-center text-white" style="background-color: #222222;">
+      <div class="container p-4 redessociales">
+         <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="img/logo_github.png" alt="Logo Github"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
+      <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="img/logo_twitter.png" alt="Logo Twitter"></a>
+      </div>
+      <div class="text-center p-2" style="background-color: rgb(24, 24, 24);">
+         <p class="text-white">Copyright &copy; 2021 <strong>TheTop100; Javiera Azocar - Luis Muñoz - Mario Gómez</strong>. Todos los derechos reservados</p>
+      </div>
+   </footer>
+
+</body>
+</html>

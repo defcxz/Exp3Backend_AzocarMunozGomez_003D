@@ -1,0 +1,117 @@
+.logo{
+   width: 300px;
+   height: auto;
+   margin:0 auto;
+}
+
+.carouselimg{
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   display: block;
+}
+.titulocarru{
+   color: white;
+   text-shadow:#e1dcd1 1px 1px;
+   
+}
+.descriptioncaro{
+   color: white ;
+   text-shadow: 1px 1px #e1dcd1;
+   
+}
+.imgsize{
+   width: 300px;
+   height: 400px;
+   margin: auto;
+   margin-top: 10px;
+   
+}
+
+.information{
+   background-color: #fdcb6e;
+}
+.titulo{
+   color: #000000;
+   text-align: center;
+   text-decoration: underline #000000;
+   font-size: 25px;
+   padding-top: 20px ;
+   padding-bottom: 30px ;
+   
+   text-decoration: underline, ;
+}
+.descripcion{
+   text-align: justify,left;
+   padding-left: 10px;
+   padding-top: 50px;
+   font-family: "PT SANS";
+}
+.des2{
+   text-align: justify,left;
+   padding-left: 10px;
+   padding-top: 40px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.carru{
+   width: 100%;
+   height: auto;
+   margin: auto;
+   margin-top: 30px;
+   background-color: #fdcb6e;
+}
+.fondo{
+   height: auto;
+   margin: 0 auto;
+   display: block;
+   background-image:url(fondo5.jpg);
+   background-size: cover;    
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.resumen{
+   border: 10px;
+   border-color: #fdcb6e;
+}
+.margenimg{
+   padding: 20px 10px 20px;
+}
+
+.des1{
+   text-align:justify;
+   font-size: 15px;
+   color: #000000;
+}
+.titulocard{
+   text-align: center;
+   font-size: 30px;
+}
+#search{
+	text-align:center;
+}
+#searchbar{
+	width:400px;
+	margin: auto;
+	text-align:center;
+}
+.btn{
+	margin:20px;
+   
+}
+.row{
+   padding: 2px 5px 2px;
+	
+}
+.imgRow{
+	text-align:right;
+	min-height:225px;
+	padding:20px;
+
+}
+#book1,#book2,#book3,
+#book4,#book5,#book6,
+#book7,#book8,#book9,
+#book10{
+	background-color: #fdcb6e;
+}
+

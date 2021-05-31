@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilos.css">
+   <link rel="stylesheet" href="css/Registro.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<body style="background-color:#fdcb6e;">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+           <img src="img/LogitoMenu.jpg" width="30" height="30" alt="">
+         </a>     
+        <div class="collapse navbar-collapse" id="opciones">   
+           <ul class="navbar-nav derecha">
+            <li class="nav-item">
+                <a class="nav-link" href="Registro.html">Registro</a>
+             </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="galeria.html">Galería de fotos</a>
+              </li>            
+              <li class="nav-item contactanos">
+                <a class="nav-link" href="contacto.html">Contáctanos</a>
+             </li>     
+           </ul>
+        </div>
+     </nav>
+     <br>
+     <br>
+<div class="container fondo" style="max-width: 650px; min-width: 400px;">
+  <div style="background-color: #ffeaa7;" class="card ">
+    <h2 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" class="card-header text-center creacuenta">Crea Tu Cuenta Para TheTop100</h2>
+    <div class="card-body ">
+      <form id="myForm" onsubmit="return validar()">
+        <div class="form-group">
+          <legend class="titulos">Datos de la Cuenta</legend>
+          <label class="titulos" for="user">Usuario:</label>
+          <input type="text" class="form-control" id="user" placeholder="Escriba Nombre de Usuario">
+          <label class="titulos" for="email">Correo Electronico:</label>
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+          <label class="titulos" for="Pass1">Contraseña:</label>
+          <input type="password" class="form-control" id="pass1" placeholder="Escriba su Contraseña">
+          <label class="titulos" for="pass2">Repetir Contraseña:</label>
+          <input type="password" class="form-control" id="pass2" placeholder="Contraseña">
+        </div>
+
+        <div class="form-group">
+          <legend class="titulos">Datos Personales</legend>
+          <label class="titulos" for="nombre">Nombre y Apellido:</label>
+          <input type="nombre" class="form-control" id="nombre" placeholder="Escriba Su Nombre y Apellido ">
+          <label class="titulos" for="sexo">Sexo:</label>
+          <input type="radio" id="sexo" name="sexo"> Masculino
+          <input type="radio" id="sexo" name="sexo"> Femenino
+          <input type="radio" id="sexo" name="sexo"> Otro <br>
+          <label class="titulos" for="region">Región:</label>      
+            <select class="form-control" id="region">
+              <option value="">Seleccionar</option>
+              <option value="">Región de Arica y Parinacota</option>
+              <option value="">Región de Tarapacá</option>
+              <option value="">Región de Antofagasta</option>
+              <option value="">Región de Atacama</option>
+              <option value="">Región de Coquimbo</option>
+              <option value="">Región de Valparaíso</option>
+              <option value="">Región Metropolitana de Santiago</option>
+              <option value="">Región del Libertador General Bernardo O’Higgins</option>
+              <option value="">Región del Maule</option>
+              <option value="">Región del Ñuble</option>
+              <option value="">Región del Biobío</option>
+              <option value="">Región de La Araucanía</option>
+              <option value="">Región de Los Ríos</option>
+              <option value="">Región de Los Lagos</option>
+              <option value="">Región de Aysén del General Carlos Ibáñez del Campo</option>
+              <option value="">Región de Magallanes y la Antártica Chilena</option>
+            </select> 
+          <legend class="titulos">Datos Opcionales</legend>
+          <label class="titulos" for="num">Número de Teléfono:</label>
+          <input type="text" class="form-control" id="num" placeholder="+569 XXXXXXXX">       
+          <label class="titulos" for="terminos">Términos y condiciones:</label><br>
+          <a href="https://www.roberthalf.cl/terminos-y-condiciones-de-uso-de-sitio-web"
+          target="_blank" class="btn btn-secondary">Términos y condiciones</a><br>
+          <input type="checkbox" id="terminos"> Acepto los términos y condiciones                          
+        </div>
+        <input type="submit" class="btn btn-warning" id="boton" value="Registrar">
+        <input type="reset" class="btn btn-secondary" id="boton" value="Reiniciar">
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/Registros.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  function mouseOver() {
+    document.getElementById("demo").style.color = "orange";
+  }
+  
+  function mouseOut() {
+    document.getElementById("demo").style.color = "white";
+  }
+  </script>
+  <br>
+   <footer class="text-center text-white" style="background-color: #222222;">
+    <div class="container p-4 redessociales">
+       <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="img/logo_github.png" alt="Logo Github"></a>
+       <a href="https://www.instagram.com/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
+       <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="img/logo_twitter.png" alt="Logo Twitter"></a>
+    </div>
+    <div class="text-center p-2" style="background-color: rgb(24, 24, 24);">
+       <p class="text-white">Copyright &copy; 2021 <strong>TheTop100; Javiera Azocar - Luis Muñoz - Mario Gómez</strong>. Todos los derechos reservados</p>
+    </div>
+ </footer>
+
+</body>

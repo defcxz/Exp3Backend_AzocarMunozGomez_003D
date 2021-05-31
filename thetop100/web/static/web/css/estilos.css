@@ -1,0 +1,32 @@
+/* Se llevan los elementos de la barra de navegacion a la derecha */
+.derecha{
+   margin-left: auto;
+}
+
+.derecha .nav-item .nav-link{
+   font-weight: bold;
+   color: #000 !important;
+   letter-spacing: 3px;
+   transition: .4s;
+}
+
+.contactanos{
+   transition: .4s;
+   border: 1px solid #000;
+}
+
+.derecha .nav-item .nav-link:hover{
+   color: #fdcb6e !important;
+   background-color: #000;
+   text-shadow: 0px 0px 0px #000;
+   transition: .4s;
+}
+
+.redessociales img{
+   height: 30px;
+   width: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+   filter: grayscale(1) invert(1);
+   -webkit-filter: grayscale(1) invert(1);
+}

@@ -1,0 +1,58 @@
+.titulo{
+   font-size: 100px;
+   background-image: linear-gradient(to bottom right, #fdcb6e, #f5d9b9);
+   letter-spacing: 15px;
+   padding-top: 250px;
+   padding-bottom: 250px;
+   text-align: center;
+   color: #000;
+}
+
+.gallery {
+   padding: 100px;
+}
+
+.gallery .row > div {
+   padding: 1px;
+   height: 100%;
+}
+
+img {
+   width: 100%;
+   position: relative;
+}
+
+.navbar-brand {
+   width: 30px;
+}
+
+.info {
+   text-align: center;
+}
+
+.info .btn {
+   color: #fff;
+   border: 1px solid #fff;
+   width: 120px;
+   transition: all 0.4s;
+   margin-top: 20px;
+}
+
+.info .btn:hover{
+   transition: all 0.4s;
+   background-color: #fff;
+   width: 170px;
+}
+
+/* Pagina responsive. Para dispositivos moviles. */
+@media(max-width: 768px){
+   .titulo{
+      letter-spacing: 1px;
+      padding-top: 250px;
+      padding-bottom: 250px;
+   }
+
+   .gallery{
+      padding: 10px;
+   }
+}

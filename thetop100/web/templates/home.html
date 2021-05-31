@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'web/css/estilos.css'%}">
+   <link rel="stylesheet" href="{% static 'web/css/index.css'%}">
+   <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css'%}">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <script src="{% static 'web/js/libros.js'%}"></script>
+   <script src=""></script>
+   <title>Inicio</title>
+</head>
+
+<body>
+   
+   <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+         <img src="{%static 'web/img/LogitoMenu.jpg'%}" width="30" height="30" alt="">
+       </a>     
+      <div class="collapse navbar-collapse" id="opciones">   
+         <ul class="navbar-nav derecha">
+          <li class="nav-item">
+              <a class="nav-link" href="registro">Registro</a>
+           </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="galeria">Galería de fotos</a>
+            </li>            
+            <li class="nav-item contacto">
+              <a class="nav-link" href="contacto">Contáctanos</a>
+           </li>     
+         </ul>
+      </div>
+   </nav>
+   <!--masterhead-->
+   <div class="fondo col-md-12">
+      <img class="img-fluid fondo logo" src="{%static 'web/img/logo_transparent.png'%}">
+   </div>
+   <!--fin del masterhead-->
+      <!--carrusel-->
+      <div class="container-fluid carru">
+         <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel1" data-slide-to="1"></li>
+               <li data-target="#carousel1" data-slide-to="2"></li>
+            </ol>
+      
+         <!--Diapositivas-->
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="carouselimg img-fluid" src="{% static 'web/img/carru1.jpg'%}" alt="" >
+               <div class="carousel-caption">
+                  <h1 class="titulocarru">Lista de Mejores libros del año</h1>
+                  <a href="https://elpais.com/babelia/2020-12-18/los-50-mejores-libros-de-2020.html" target="_blank" class="btn btn-light btn-sm">Click Aquí</a>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img class="carouselimg img-fluid" src="{% static 'web/img/fondocarru2.jpg' %}" alt="" >
+               <div class="carousel-caption">
+                  <h1 class="titulocarru">Lista de Mejores libros de todos los tiempos</h1>
+                  <a href="https://www.fundacionaquae.org/los-100-mejores-libros-de-todos-los-tiempos/" target="_blank" class="btn btn-light btn-sm">Click Aquí</a>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img class="carouselimg img-fluid" src="{% static 'web/img/fondocarru3.jpg' %}" alt="">
+               <div class="carousel-caption">
+                  <h1 class="titulocarru">Lista de libros nuevos</h1>
+                  <a href="https://www.planetadelibros.com/seleccion-editorial/libros-recomendados/132" target="_blank" class="btn btn-light btn-sm">Click Aquí</a>
+               </div>
+         </div>
+      </div>
+      <!--botones carrusel-->
+      <a class="carosuel-control-prev" href="#carousel1" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+      </a>
+      <a class="carosel-control-next" href="#carousel1" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+      </a> 
+      </div>
+   </div>
+   
+   <!--informacion libros del mes-->
+   <div class="container">
+      <h3 class="titulo ">Mejores libros del mes</h3>
+   </div>
+   <div class="container information">
+      <div class="row">
+         
+         <div class="col-md-3 " style="background-color: #fdcb6e;">
+               <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/fantasmasdollyalderton.jpg' %}" >
+            
+         </div>
+         <div class="col-md-8">
+            <p class="des2">Nina y Lola son dos amigas de treinta y pocos: independientes y con éxito profesional, tienen la sensación que se están quedando atrás mientras sus amigas se casan y tienen hijos, pero tampoco quieren perder su libertad ni quedarse con el primer tipo que aparezca. Cuando Nina conoce a Max a través de una app de citas 
+               recupera la confianza en el amor, pero tras unos meses maravillosos, 
+               Max desparece de su vida en el momento álgido de su relación.<br>
+               Divertida, tierna y con el punto justo de tristeza, la primera novela de Dolly Alderton brilla por sus observaciones inteligentes sobre el amor, la madurez, la identidad, la familia y los amigos.
+            </p>
+            <a href="https://www.planetadelibros.cl/libro-fantasmas/329225" class="btn btn-info">Más Info</a>
+         </div>
+         </div>
+   </div>
+   <div class="container information">
+      <div class="row">
+         <div class="col-md-3" style="background-color: #fdcb6e;">
+            <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/todosbuscananoraroy.jpg'%}" width="200px" height="200px">   
+
+         </div>
+         <div class="col-md-8">
+            <p class="des2">Nadie sabe qué fue lo que impulsó a Nora Roy, una paciente del centro psiquiátrico Vera de la Cruz, a asesinar a su psiquiatra y a una de las enfermeras. Nadie entiende cómo fue capaz de encerrarlos en el sótano, matarlos y huir sin ser vista.
+               Mientras todos buscan a Nora, Eva alquila una habitación a Charlotte, una parisina extraña y discreta. Una noche, Eva coincide en una discoteca con Adrián, un hombre al que apenas conoce, y terminan en su piso lo que parece una prometedora cita.
+               A la mañana siguiente, Adrián no está y Charlotte ha desaparecido dejando tras de sí las paredes salpicadas de sangre y la vida de Eva perturbada de manera irremediable.
+            </p>
+            <a href="https://www.planetadelibros.cl/libro-todos-buscan-a-nora-roy/329223" class="btn btn-info">Más Info</a>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3" style="background-color: #fdcb6e;">
+            <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/elhombrequevivio2veces.jpg'%}" width="200px" height="200px">
+
+         </div>
+         <div class="col-md-8">
+            <p class="des2">
+               Ibiza, 1999. María y sus hijos, Ángel y Alba, de cinco y siete años, llegan a la playa una apacible tarde de septiembre después de saber que el vuelo del padre, Salvador, ha sido cancelado y que llegará con el último avión de la noche. Lo que pasará en aquella pequeña cala cambiará todo para siempre.<br>
+               Esta es la increíble historia de Salvador Martí, el hijo que tendrá que luchar contra el destino cuando recibe una herencia envenenada de su padre; el chico que, avergonzado del mundo, encontrará pronto refugio en las páginas de los libros; el poeta que buscará su reflejo en las palabras de las mujeres y los hombres que, antes que él, supieron escribir con belleza y verdad su despedida.<br>
+            El viaje que vivirá Salvador, a través de los personajes que irá encontrando a cada lado del espejo, es un canto a la vida, que desdibuja las fronteras entre la realidad y la imaginación, entre las obsesiones y los sueños, entre el bien y el mal, entre Dios y el Diablo. El protagonista verá cómo se borran los límites entre la vida y la muerte, como dos caras de la misma moneda.
+            </p>
+            <a href="https://www.planetadelibros.cl/libro-el-hombre-que-vivio-dos-veces/330742" class="btn btn-info">Más Info</a>
+         </div>
+
+      </div>
+   </div>
+   <!--Bestsellers-->
+   <div class="container">
+      <h3 class="titulo ">Bestsellers</h3>
+   </div>
+   <div class="container information">
+      <div class="row">
+         
+         <div class="col-md-3" style="background-color: #fdcb6e;">
+               <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/loscuatrovientos.jpg'%}"  width="200px" height="200px">
+            
+         </div>
+         <div class="col-md-8">
+            <p class="des2">Texas, 1921. La Gran Guerra ha terminado y Estados Unidos parece entrar en una nueva era de optimismo y abundancia. Pero para Elsa, considerada demasiado mayor para casarse en una epoca en el que el matrimonio es la única opción de una mujer, el futuro es incierto. Hasta la noche en que conoce a Rafe Martinelli y decide cambiar la dirección de su vida. Con su reputación arruinada, solo le queda una opción respetable: casarse con un hombre al que apenas conoce.
+               En 1934, el mundo ha cambiado. Millones de personas se han quedado sin trabajo y los granjeros luchan por conservar sus tierras. Las cosechas se pierden por la sequía, las fuentes de agua se secan y el polvo amenaza con enterrarlo todo. Cada día en la granja de los Martinelli es una desesperada batalla por la supervivencia. Y como tantos otros, Elsa se ve obligada a tomar una agónica decisión: luchar por la tierra que ama o marchar al Oeste, a California, en busca de una vida mejor para su familia.
+            </p>
+            <a href="https://www.casadellibro.com/libro-los-cuatro-vientos/9788491295310/12160559" class="btn btn-info">Más Info</a>
+         </div>
+         </div>
+   </div>
+   <div class="container information">
+      <div class="row">
+         <div class="col-md-3" style="background-color: #fdcb6e;">
+            <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/labibliotecadelamedianoche.jpg'%}" width="200px" height="200px">   
+
+         </div>
+         <div class="col-md-8">
+            <p class="des2">"Entre la vida y la muerte hay una biblioteca. Y los estantes de esa biblioteca son infinitos. Cada libro da la oportunidad de probar otra vida que podrías haber vivido y de comprobar cómo habrían cambiado las cosas si hubieras tomado otras decisiones... ¿Habrías hecho algo de manera diferente si hubieras tenido la oportunidad?".
+               Nora Seed aparece, sin saber cómo, en la Biblioteca de la Medianoche, donde se le ofrece una nueva oportunidad para hacer las cosas bien. Hasta ese momento, su vida ha estado marcada por la infelicidad y el arrepentimiento.             
+               Nora siente que ha defraudado a todos, y tambien a ella misma. Pero esto está a punto de cambiar.            
+               Los libros de la Biblioteca de la Medianoche permitirán a Nora vivir como si hubiera hecho las cosas de otra manera. Con la ayuda de una vieja amiga, tendrá la opción de esquivar todo aquello que se arrepiente de haber hecho (o no haber hecho), en pos de la vida perfecta. Pero las cosas no siempre serán como imaginó que serían, y pronto sus decisiones enfrentarán a la Biblioteca y a ella misma en un peligro extremo. Nora deberá responder una última pregunta antes de que el tiempo se agote: ¿cuál es la mejor manera de vivir?
+            </p>
+            <a href="https://www.casadellibro.com/libro-la-biblioteca-de-la-medianoche-adn/9788413621654/12056384" class="btn btn-info">Más Info</a>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3" style="background-color: #fdcb6e;">
+            <img class="img-fluid imgsize img-thumbnail" src="{% static 'web/img/lachicasalvaje.jpg'%}" width="200px" height="200px">
+
+         </div>
+         <div class="col-md-8">
+            <p class="des2">
+               Una novela exquisita, una oda a la naturaleza y a lo salvaje Durante años, los rumores de la existencia de la Chica Salvaje han perturbado la vida de la pequeña localidad de Barkley Cove, un tranquilo pueblo de pescadores en Carolina del Norte. Abandonada a los seis años, 
+               Kya es una joven sensible, inteligente y de una belleza insólita que ha sobrevivido en soledad en las marismas, con la naturaleza como única amiga. Es una superviviente nata. Su solitaria vida se complica cuando un hombre aparece asesinado en el pantano y la acusan del crimen. Entonces, 
+               todos sus misterios saldrán a la luz.Una magistral novela que nos habla de los secretos del ser humano, las pulsiones que nos mueven y la verdadera naturaleza del amor y del odio.
+            </p>
+            <a href="https://www.casadellibro.com/libro-la-chica-salvaje/9788417743376/10043616" class="btn btn-info">Más Info</a>
+         </div>
+
+      </div>
+   </div>
+   <br><br>
+   <!--API-->
+   <div class="container" style="background-color: #fdcb6e;">
+
+      <div class="row" id='search'>
+        <input id='searchbar' class="form-control" placeholder="Buscar Google Books por Título" type="text"></input>
+        <button class = "btn btn-info" id='enter'>Buscar</button>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book1">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book2">
+          </div>
+      </div>    
+      <div class="row">          
+          <div class="col-md-4 col-md-offset-1" id="book3">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book4">
+          </div>
+      </div>    
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book5">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book6">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book7">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book8">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book9">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book10">
+          </div>
+      </div>            
+
+    </div>
+
+    <script src="{% static 'web/js/libros.js' %}"></script>
+   <!--fin API-->
+   <br><br>
+   <footer class="text-center text-white" style="background-color: #222222;">
+      <div class="container p-4 redessociales">
+         <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="{% static 'web/img/logo_github.png' %}" alt="Logo Github"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="{% static 'web/img/logo_instagram.png'%}" alt="Logo Instagram"></a>
+      <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="{% static 'web/img/logo_twitter.png'%}" alt="Logo Twitter"></a>
+      </div>
+      <div class="text-center p-2" style="background-color: rgb(24, 24, 24);">
+         <p class="text-white">Copyright &copy; 2021 <strong>TheTop100; Javiera Azocar - Luis Muñoz - Mario Gómez</strong>. Todos los derechos reservados</p>
+      </div>
+   </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="{% static 'web/js/popper.min.js'%}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="{% static 'js/bootstrap.min.js'%}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
