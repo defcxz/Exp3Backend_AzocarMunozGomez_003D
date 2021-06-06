@@ -1,13 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/estilos.css">
-   <link rel="stylesheet" href="css/gallery.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/hover-box.css">
+   <link rel="stylesheet" href="{% static 'web/css/estilos.css'%}">
+   <link rel="stylesheet" href="{% static 'web/css/gallery.css'%}">
+   <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css'%}">
+   <link rel="stylesheet" href="{% static 'web/css/hover-box.css'%}">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <title>Galería de Fotos</title>
 </head>
@@ -19,24 +20,24 @@
          <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">
-         <img src="img/LogitoMenu.jpg" width="30" height="30" alt="">
+         <img src="{% static 'web/img/LogitoMenu.jpg'%}" width="30" height="30" alt="">
        </a>     
       <div class="collapse navbar-collapse" id="opciones">   
          <ul class="navbar-nav derecha">
           <li class="nav-item">
-              <a class="nav-link" href="Registro.html">Registro</a>
+              <a class="nav-link" href="registro">Registro</a>
            </li>
             <li class="nav-item">
-               <a class="nav-link" href="index.html">Inicio</a>
+               <a class="nav-link" href="home">Inicio</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="nosotros.html">Nosotros</a>
+               <a class="nav-link" href="nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="galeria.html">Galería de fotos</a>
+               <a class="nav-link" href="galeria">Galería de fotos</a>
             </li>            
             <li class="nav-item contactanos">
-              <a class="nav-link" href="contacto.html">Contáctanos</a>
+              <a class="nav-link" href="contacto">Contáctanos</a>
            </li>     
          </ul>
       </div>
@@ -51,7 +52,7 @@
             <!-- Primera foto -->
             <div class="hvrbox col-sm-12 col-md-12">
                <a class="lightbox" href="https://feriachilenadellibro.cl/producto/9789563251951-juego-de-tronos-1-cancion-de-hielo-y/" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/got_books.jpg" alt="Libros GOT">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/got_books.jpg'%}" alt="Libros GOT">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="hvrbox-text">
@@ -67,7 +68,7 @@
             <!-- Segunda foto -->
             <div class="hvrbox col-sm-12 col-md-6">
                <a class="lightbox" href="https://www.tuslibros.cl/libro/la-chica-del-tren-2/" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/la-chica-del-tren.jpg" alt="">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/la-chica-del-tren.jpg'%}" alt="">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="hvrbox-text">La Chica del Tren
@@ -83,7 +84,7 @@
             <!-- Tercera foto -->
             <div class="hvrbox col-sm-12 col-md-6">
                <a class="lightbox" href="https://www.buscalibre.cl/libro-la-huida-del-cazador/9786073184724/p/52041401" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/la-huida-del-cazador.jpg" alt="">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/la-huida-del-cazador.jpg'%}" alt="">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="info hvrbox-text">La Huida del Cazador
@@ -98,7 +99,7 @@
             <!-- Cuarta foto -->
             <div class="hvrbox col-sm-12 col-md-12">
                <a class="lightbox" href="https://www.buscalibre.cl/libro-el-perfume/9789566038320/p/52380146" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/el-perfume.jpg" alt="">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/el-perfume.jpg'%}" alt="">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="info hvrbox-text">El Perfume
@@ -113,7 +114,7 @@
             <!-- Quinta foto -->
             <div class="hvrbox col-sm-12 col-md-6">
                <a class="lightbox" href="https://www.buscalibre.cl/libro-raven-cyclethe-1-the-raven-boys-scholastic-libro-en-ingles/9780545424936/p/39025367" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/the_raven_boys.jfif" alt="">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/the_raven_boys.jfif'%}" alt="">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="info hvrbox-text">The Raven Boys
@@ -128,7 +129,7 @@
             <!-- Sexta foto -->
             <div class="hvrbox col-sm-12 col-md-6">
                <a class="lightbox" href="https://www.buscalibre.cl/libro-el-brillo-de-las-luciernagas/9788490328224/p/41799114" target="_blank">
-                  <img class="hvrbox-layer_bottom" src="img/el-brillo-de-las-luciernagas.jpg" alt="">
+                  <img class="hvrbox-layer_bottom" src="{% static 'web/img/el-brillo-de-las-luciernagas.jpg'%}" alt="">
                   <div>
                      <div class="info hvrbox-layer_top">
                         <div class="hvrbox-text">El Brillo de las Luciérnagas
@@ -145,18 +146,18 @@
 
    <footer class="text-center text-white" style="background-color: #222222;">
       <div class="container p-4 redessociales">
-         <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="img/logo_github.png" alt="Logo Github"></a>
-         <a href="https://www.instagram.com/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
-         <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="img/logo_twitter.png" alt="Logo Twitter"></a>
+         <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="{% static 'web/img/logo_github.png' %}" alt="Logo Github"></a>
+         <a href="https://www.instagram.com/" target="_blank"><img src="{% static 'web/img/logo_instagram.png'%}" alt="Logo Instagram"></a>
+         <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="{% static 'web/img/logo_twitter.png'%}" alt="Logo Twitter"></a>
       </div>
       <div class="text-center p-2" style="background-color: rgb(24, 24, 24);">
          <p class="text-white">Copyright &copy; 2021 <strong>TheTop100; Javiera Azocar - Luis Muñoz - Mario Gómez</strong>. Todos los derechos reservados</p>
       </div>
    </footer>
    
-   <script src="js/gallery.js"></script>
-   <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="js/bootstrap.min.js"></script>
+   <script src="{% static 'web/js/gallery.js'}"></script>
+   <script src="{% static 'web/js/jquery-3.2.1.slim.min.js'}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="{% static 'web/js/popper.min.js'}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="{% static 'web/js/bootstrap.min.js'}"></script>
 </body>
 </html>
