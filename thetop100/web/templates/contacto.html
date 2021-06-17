@@ -73,7 +73,7 @@
                <button class="btn btn-primary">Enviar</button>
                </form>
       </div> -->
-      <form action="" method="post" id="formulario">
+      <form action="" method="post" class="formulario">
          {% csrf_token %}
          <div class="form-group">
          {{ mensaje_form.nomApellido.label }}
@@ -94,6 +94,9 @@
          <div class="form-group">
             {{ mensaje_form.mensaje.label }}
             {{ mensaje_form.mensaje }}
+         </div>
+         <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
          </div>
       </form>
    </div>
