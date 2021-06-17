@@ -8,3 +8,6 @@ class Mensaje(models.Model):
    telefono    = models.CharField(max_length=12, verbose_name="Telefono")
    asunto      = models.CharField(max_length=50, verbose_name="Asunto")
    mensaje     = models.CharField(max_length=500, verbose_name="Mensaje")
+
+   def __str__(self):
+      return self.nomApellido

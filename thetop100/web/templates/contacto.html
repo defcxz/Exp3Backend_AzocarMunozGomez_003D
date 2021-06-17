@@ -9,11 +9,11 @@
    <link rel="stylesheet" href="{% static 'web/css/contacto.css'%}">
    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css'%}">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <script src="{% static 'web/js/jquery-3.2.1.slim.min.js'%}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="{% static 'web/js/popper.min.js'%}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="{% static 'web/js/bootstrap.min.js'%}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-   <script src="{% static 'web/js/jquery.validate.js'%}"></script>
-   <script src="{% static 'web/js/formcontacto.js'%}"></script>
+   <script type="text/javascript" src="{% static 'web/js/jquery-3.2.1.slim.min.js'%}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="{% static 'web/js/popper.min.js'%}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="{% static 'web/js/bootstrap.min.js'%}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+   <script type="text/javascript" src="{% static 'web/js/jquery.validate.js'%}"></script>
+   <script type="text/javascript" src="{% static 'web/js/formcontacto.js'%}"></script>
    <title>Contacto</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
       <h1 class="titulo">
          ¡Contáctanos!
       </h1>
-      <div class="formulario col-md-10 col-sm-12">
+      <!-- <div class="formulario col-md-10 col-sm-12">
          <aside class="side col-md-4 col-sm-12">
             <img class="logoside" src="{% static 'web/img/LogitoMenu.jpg'%}">
             <p class="sloganside">Tu opinión es más importante de lo que crees.</p>
@@ -72,8 +72,30 @@
                <br>
                <button class="btn btn-primary">Enviar</button>
                </form>
-      </div>
-      
+      </div> -->
+      <form action="" method="post" id="formulario">
+         {% csrf_token %}
+         <div class="form-group">
+         {{ mensaje_form.nomApellido.label }}
+         {{ mensaje_form.nomApellido }}
+         </div>
+         <div class="form-group">
+            {{ mensaje_form.email.label }}
+            {{ mensaje_form.email }}
+         </div>
+         <div class="form-group">
+            {{ mensaje_form.telefono.label }}
+            {{ mensaje_form.telefono }}
+         </div>
+         <div class="form-group">
+            {{ mensaje_form.asunto.label }}
+            {{ mensaje_form.asunto }}
+         </div>
+         <div class="form-group">
+            {{ mensaje_form.mensaje.label }}
+            {{ mensaje_form.mensaje }}
+         </div>
+      </form>
    </div>
    <footer class="text-center text-white" style="background-color: #222222;">
       <div class="container p-4 redessociales">
