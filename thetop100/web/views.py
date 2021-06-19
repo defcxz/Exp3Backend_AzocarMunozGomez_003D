@@ -11,7 +11,11 @@ def galeria(request):
    return render(request, 'galeria.html')
 
 def contacto(request):
-   return render(request, 'contacto.html')
+   
+   mensajes = Mensaje.objects.all()
+   return render(request, 'contacto.html', context={'datos': mensajes}
+   )
+
 
 def crearMensaje(request):
    if request.method == 'POST':

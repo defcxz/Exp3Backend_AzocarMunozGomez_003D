@@ -97,9 +97,36 @@
          </div>
          <div class="form-group">
             <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
+            <input type="reset" class="btn btn-danger" id="limpiar" value="Limpiar">
          </div>
       </form>
-   </div>
+      </div>
+      <!--Tabla de prueba de READ
+      <div class="row">
+         <h1>Listado de mensajes</h1>
+      </div>
+      <table class="table">
+         <thead>
+            <tr>
+               <th scope="col">Nombre Apellido</th>
+               <th scope="col">Asunto</th>
+               <th scope="col">Mensaje</th>
+               <th scope="col"></th>
+            </tr>
+         </thead>
+         <tbody>
+            {%for me in datos %}
+               <tr>
+                  <td>{{me.nomApellido}}</td>
+                  <td>{{me.asunto}}</td>
+                  <td>{{me.mensaje}}</td>
+               </tr>
+            {%endfor%}
+         </tbody>
+      </table>
+      </div> -->
+
+   
    <footer class="text-center text-white" style="background-color: #222222;">
       <div class="container p-4 redessociales">
          <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="{% static 'web/img/logo_github.png' %}" alt="Logo Github"></a>
