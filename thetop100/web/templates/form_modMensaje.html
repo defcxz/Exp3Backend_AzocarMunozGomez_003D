@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'web/css/estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'web/css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="{% static 'web/js/libros.js'%}"></script>
+    <script src=""></script>
+    <title>Modificar Mensaje</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+           <img src="{%static 'web/img/LogitoMenu.jpg'%}" width="30" height="30" alt="">
+         </a>     
+        <div class="collapse navbar-collapse" id="opciones">   
+           <ul class="navbar-nav derecha">
+              <li class="nav-item">
+                 <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="galeria">Galería de fotos</a>
+              </li>            
+              <li class="nav-item contactanos">
+                <a class="nav-link" href="crear_mensaje">Contáctanos</a>
+             </li>     
+             <li class="nav-item mensajes">
+                 <a class="nav-link" href="ver">Mensajes</a>
+             </li>
+           </ul>
+        </div>
+     </nav>
+    <div class="container-fluid" style="background-color: #fdcb6e;">
+        <div class="row">
+            <h1>Modificando Mensajes</h1>
+        </div>
+
+        <div class="row">
+                <form method="POST" action="#" id="formulario">
+                    {%csrf_token%}
+                    <div class="form-group">
+                        {{form.as_table}}
+                    </div>
+                        <div class="form-group">
+                         <input type="submit" class="btn btn-danger" id="modificar" value="Modificar">
+                         
+                    </div>
+                </form>
+
+        </div>
+    </div>    
+    <footer class="text-center text-white" style="background-color: #222222;">
+        <div class="container p-4 redessociales">
+        <a href="https://www.github.com/defcxz/Experiencia1_AzocarMunozGomez_003D" target="_blank"><img src="{% static 'web/img/logo_github.png' %}" alt="Logo Github"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="{% static 'web/img/logo_instagram.png'%}" alt="Logo Instagram"></a>
+        <a href="https://twitter.com/AAAAAGGHHHH/status/1377208310315683842" target="_blank"><img src="{% static 'web/img/logo_twitter.png'%}" alt="Logo Twitter"></a>
+        </div>
+        <div class="text-center p-2" style="background-color: rgb(24, 24, 24);">
+        <p class="text-white">Copyright &copy; 2021 <strong>TheTop100; Javiera Azocar - Luis Muñoz - Mario Gómez</strong>. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
